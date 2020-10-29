@@ -1,0 +1,79 @@
+@media (min-width: 1240px) {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+    .contact-modal{
+        font-size: 1.2rem;
+        font-family: "Roboto Mono", monospace;
+        background-color: rgba(140, 28, 151, 0.8);
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 2rem;
+        border-width: 4px;
+        border-color: #FFF4F8;
+        z-index: 25;
+        position: absolute;
+        right: 0;
+        color: #FFF4F8;
+        bottom: 0;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        width: 25%;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .form input, .form textarea{
+        outline: none !important;
+        box-shadow: none !important;
+        margin-bottom: 1rem;
+        background-color: rgba(253, 234, 255, 0.5);
+        border-radius: 0.5rem;
+    }
+
+    .form textarea{
+        margin-bottom: 1rem;;
+    }
+
+    .form{
+        outline: none !important;
+        box-shadow: none !important;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+    }
+
+    .functionality{
+        display: inline-block;
+    }
+
+    .form .functionality button, .send {
+        cursor: pointer;
+        background-color: transparent;
+        color: #3D0ABF;
+        font-family: "Roboto Mono", monospace;
+        font-size: 1.7rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+    }
+
+    .form .functionality button:hover{
+        color: #3D0ABF;
+    }
+    .send:hover{
+        background-color: #3D0ABF;
+        color: #FFF4F8;
+    }
+
+    .form .functionality button {
+        
+        color: #FFF4F8;
+        margin-left: 2rem;
+    }
+
+    .overlay{
+        background-color: transparent;
+    }
+}

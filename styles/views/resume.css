@@ -1,0 +1,60 @@
+@media (min-width: 1240px) {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+	.resume_layer {
+		padding-left: 9rem;
+		font-family: "Roboto Mono", monospace;
+    }
+
+    .resume-title{
+        font-size: 2rem;
+        color: white;
+        animation: effect 700ms infinite;
+    }
+    
+    .text-size{
+        font-size: 1rem;
+    }
+
+    @keyframes effect {
+        0% {
+            text-shadow: 
+            0.05em 0 0 rgba(192, 26, 192,0.75),
+            -0.05em -0.025em 0 rgba(255, 255, 255, 0.75);
+        }
+        14% {
+            text-shadow: 
+            0.05em 0 0 rgba(192, 26, 192,0.75),
+            -0.05em -0.025em 0 rgba(255, 255, 255, 0.75);
+        }
+        15% {
+            text-shadow: 
+            -0.05em 0.025em 0 rgba(192, 26, 192, 0.75),
+            0.025em 0.025em 0 rgba(255, 255, 255, 0.75);
+        }
+        49% {
+            text-shadow: 
+            -0.05em 0.025em 0 rgba(192, 26, 192, 0.75),
+            0.025em 0.025em 0 rgba(255, 255, 255, 0.75);
+        }
+        50% {
+            text-shadow: 
+            0.025em 0.05em 0 rgba(192, 26, 192, 0.75),
+            0.05em 0 0 rgba(255, 255, 255, 0.75),
+            0 -0.05em 0 rgba(231, 27, 109, 0.75);
+        }
+        99% {
+            text-shadow: 
+            0.025em 0.05em 0 rgba(192, 26, 192, 0.75),
+            0.05em 0 0 rgba(255, 255, 255, 0.75),
+            0 -0.05em 0 rgba(231, 27, 109, 0.75);
+        }
+        100% {
+            text-shadow: 
+            -0.025em 0 0 rgba(192, 26, 192, 0.75),
+            -0.025em -0.025em 0 rgba(255, 255, 255, 0.75),
+            -0.025em -0.05em 0 rgba(231, 27, 109, 0.75);
+        }
+    }
+
+}
