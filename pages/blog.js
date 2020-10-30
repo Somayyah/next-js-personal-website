@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/main.css";
 import Head from "next/head";
 
 function Blog() {

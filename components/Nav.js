@@ -1,6 +1,11 @@
 import React, {useState} from "react";
-import "../styles/nav.css";
-import { NavLink } from "react-router-dom";
+import Link from 'next/link'
+/*import HomePage from "../pages/homePage";
+import Blog from "../pages/blog";
+import Resume from "../pages/resume";
+import Contact from "../pages/contact";
+import Project from "../pages/projects";*/
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBlog } from "@fortawesome/free-solid-svg-icons";
 import { faFile, faAddressBook } from "@fortawesome/free-regular-svg-icons";
@@ -28,36 +33,36 @@ function Nav({width_v}) {
 				{!width_v ? <li className="circle" onClick={()=> setplay(!play_track)} >
 					<i>{soundcloud}</i>
 				</li> : null}
-				<NavLink activeClassName="active" exact to="/">
+				<Link activeClassName="active" exact href="/">
 					<li className={`${!width_v? "item movement" : ""}`}>
 						<i>{home}</i>
 						{!width_v ? <span className="home">Home</span> : null}
 					</li>
-				</NavLink>
-				<NavLink activeClassName="active" exact to="/resume">
+				</Link>
+				<Link activeClassName="active" exact href="/resume">
 					<li className={`${!width_v? "item movement" : ""}`}>
 						<i>{resume}</i>
 						{ !width_v ? <span className="extra-small-resume ">Resume</span> : null }
 					</li>
-				</NavLink>
-				{ !width_v ? <NavLink activeClassName="active" exact to="/projects">
+				</Link>
+				{ !width_v ? <Link activeClassName="active" exact href="/projects">
 					<li className="text-extra-sm item movement">
 						<i>{project}</i>
 						<span className="extra-small">Projects</span>
 					</li>
-				</NavLink> : null}
-				<NavLink to='/blog'>
+				</Link> : null}
+				<Link href='/blog'>
 				<li className=" item movement">
 					<i>{blog}</i>
 					{ !width_v ? <span className="blog">Blog</span> : null}
 				</li>
-				</NavLink>
-				<NavLink  to='/contact'>
+				</Link>
+				<Link  href='/contact'>
 					<li className="text-extra-sm item movement">
 						<i>{contact}</i>
 						{ !width_v ? <span className="extra-small-contacts">&nbsp;Contacts</span> : null}
 					</li>
-				</NavLink>
+				</Link>
 			</ul>
 		</nav>
 	);

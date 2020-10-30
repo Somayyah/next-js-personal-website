@@ -1,8 +1,6 @@
 import React from "react";
-import '../styles/main.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUniversity, faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
-import "../styles/elements.css"
 
 function EventWork(props){
 	const university = <FontAwesomeIcon icon={faUniversity}/>

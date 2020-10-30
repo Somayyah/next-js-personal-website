@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../styles/tabs.css";
-import DATA from "../resume.json";
+import DATA from "../pages/resume.json";
 import EventWork from "./EventWork";
 import EventEducation from "./EventEducation";
 import Skill from "./Skill";

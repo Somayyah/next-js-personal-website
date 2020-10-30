@@ -1,6 +1,5 @@
 import React from "react";
 import Flip from "react-reveal/Flip";
-import "../styles/elements.css";
 
 function Skill(props) {
 	let items = Object.keys(props.data);

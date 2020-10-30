@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/title.css"
 
 function HandleC({width_v}){
 	console.log(width_v)

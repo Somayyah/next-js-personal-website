@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Modal from "react-modal";
-import "../styles/ContactUs.css";
-Modal.setAppElement("#root");
+//Modal.setAppElement("#Home");
 
 export default function ContactUs(props) {
 	function sendEmail(e) {

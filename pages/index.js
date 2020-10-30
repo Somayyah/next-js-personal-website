@@ -1,25 +1,18 @@
 //import Head from 'next/head'
 //import styles from '../styles/Home.module.css'
-import React, { useState, useEffect } from "react";
-import Nav from "./components/Nav";
-import Home from "./views/Home";
-import Blog from "./views/Blog";
-import Resume from "./views/Resume";
-import Contact from "./views/Contact";
-import Project from "./views/Projects";
-import "../styles/main.css";
-import "../styles/nav.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import Nav from "../components/Nav";
+import HomePage from "./homePage";
+import Blog from "./blog";
+import Resume from "./resume";
+import Contact from "./contact";
+import Project from "./projects";
+import { StaticRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function Home() {
-  const [width, setWidth] = useState(window.innerWidth < 1240);
+  	let width = false;
 	useEffect(() => {
-		window.addEventListener("resize", () => setWidth(window.innerWidth < 1240));
-		return () => {
-			window.removeEventListener("resize", () =>
-				setWidth(window.innerWidth < 1240)
-			);
-		};
+		width = window.innerWidth < 1240
 	}, []);
 
 	return (
@@ -31,7 +24,7 @@ export default function Home() {
 							<Switch>
 								<Route
 									path="/" exact
-									component={() => <Home width_v={width} />}
+									component={() => <HomePage width_v={width} />}
 								></Route>
 								<Route
 									path="/resume"

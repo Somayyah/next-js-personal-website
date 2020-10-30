@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "../components/Title";
-import "../styles/views/home.css";
 import Head from 'next/head'
 import Socials from "../components/Socials";
 

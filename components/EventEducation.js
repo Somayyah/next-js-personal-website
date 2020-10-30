@@ -4,7 +4,6 @@ import {
 	faMapMarkerAlt,
 	faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styles/elements.css";
 
 function EventEducation(props) {
 	const location = <FontAwesomeIcon icon={faMapMarkerAlt} />;

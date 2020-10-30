@@ -1,0 +1,65 @@
+{
+  "lists": {
+    "Technologies I use": {
+      "Web development": [
+        "REST API",
+        "HTML5/CSS3/JS",
+        "Node.js",
+        "TailwindCSS",
+        "React.js",
+        "mongodb", 
+        "express.js"
+      ],
+      "DevOps": [
+        "Git",
+        "Azure DevOps",
+        "Docker",
+        "Rancher",
+        "GKE",
+        "Jenkins",
+        "Puppet",
+        "Kubernetes"
+      ],
+      "Cloud Engineering": [
+        "Google Cloud Platform",
+        "Azure"
+      ],
+      "Programming Languages": [
+        "Python",
+        "Bash Scripting",
+        "C/C++",
+        "Javascript"
+      ]
+    }
+  },
+  "events": {
+    "EventWork": [
+      {
+        "name": "Cybersecurity Analyst",
+        "type": "Internship",
+        "date": "Oct, 2019",
+        "company": "Green Circle Co."
+      }
+    ],
+    "EventEducation": [
+      {
+        "name": "Network Engineering and Security",
+        "type": "Bachelor's Degree",
+        "where": "Jordan University of Science and Technology",
+        "date": "Aug, 2019"
+      },
+      {
+        "name": "ICT / Linux and DevOps",
+        "type": "Certification",
+        "where": "Al-Hussein Technical University",
+        "date": "April, 2020"
+      },
+      {
+        "name": "Network Engineering Incubator Program",
+        "type": "Attendance Certification",
+        "where": "Estarta Co",
+        "date": "Oct, 2019"
+      }
+    ]
+  }
+}

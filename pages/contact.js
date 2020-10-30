@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 import Fade from "react-reveal/Fade";
