@@ -2,6 +2,10 @@ import React from "react";
 import Head from "next/head";
 
 function Blog() {
+	let width_v;
+
+	if (typeof window !== "undefined") width_v = window.innerWidth < 1240;
+
 	return (
 		<>
 			<Head>

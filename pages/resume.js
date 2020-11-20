@@ -1,11 +1,15 @@
-import React from "react";
-import Tabs from "../components/Tabs"
+import React, { useEffect } from "react";
+import Tabs from "../components/Tabs";
 import ResumeTitle from "../components/ResumeTitle";
 import JSONWrapper from "../components/JSONWrapper";
 import Fade from "react-reveal/Fade";
-import Head from 'next/head'
+import Head from "next/head";
 
-function Resume({width_v}) {
+function Resume() {
+	let width_v;
+
+	if (typeof window !== "undefined") width_v = window.innerWidth < 1240;
+
 	return (
 		<>
 			<Head>
@@ -17,10 +21,14 @@ function Resume({width_v}) {
 				<title>More about me - Resume</title>
 			</Head>
 			<Fade>
-				{width_v ? <div>
-					<ResumeTitle />
-					<JSONWrapper screen={false} />
-				</div> : <Tabs screen={true}/>}
+				{width_v ? (
+					<div>
+						<ResumeTitle />
+						<JSONWrapper screen={false} />
+					</div>
+				) : (
+					<Tabs screen={true} />
+				)}
 			</Fade>
 		</>
 	);

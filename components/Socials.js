@@ -5,24 +5,24 @@ import {
 	faGithub,
 	faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import Emailme from "../components/Emailme";
+//import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+//import Emailme from "../components/Emailme";
 
 function Socials({ width }) {
 	const [emailC, setEmail] = useState(false);
 	const github = <FontAwesomeIcon icon={faGithub} />;
 	const codepen = <FontAwesomeIcon icon={faCodepen} />;
 	const linkedIn = <FontAwesomeIcon icon={faLinkedin} />;
-	const envelope = <FontAwesomeIcon icon={faEnvelope} />;
+	//const envelope = <FontAwesomeIcon icon={faEnvelope} />;
 	const linkedIN_link =
 		"http://www.linkedin.com/in/somayyah-mohammed-630a1a177/";
 	const githyb_link = "http://www.github.com/somayyah/";
 	const codepen_link = "https://codepen.io/somayyah";
 	return (
 		<div>
-			{ !width ? (
+			{!width ? (
 				<div>
-					{emailC ? <Emailme email={emailC} />  : null}
+					{emailC ? <Emailme email={emailC} /> : null}
 					<ol className="icons-container">
 						<li>
 							<a href={githyb_link} rel="noopener noreferrer" target="_blank">
@@ -39,11 +39,6 @@ function Socials({ width }) {
 								<i className="linkedIn">{codepen}</i>
 							</a>
 						</li>
-						<li>
-							<button className="linkedIn" onClick={() => setEmail(!emailC)}>
-								<i>{envelope}</i>
-							</button>
-						</li>
 					</ol>
 				</div>
 			) : null}
@@ -52,3 +47,11 @@ function Socials({ width }) {
 }
 
 export default Socials;
+
+/*
+<li>
+							<button className="linkedIn" onClick={() => setEmail(!emailC)}>
+								<i>{envelope}</i>
+							</button>
+						</li>
+*/
