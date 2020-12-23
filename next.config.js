@@ -1,5 +1,5 @@
-require("dotenv").config({ path: `${process.env.ENVIRONMENT}` });
+//require("dotenv").config({ path: `${process.env.ENVIRONMENT}` });
 
 module.exports = {
-	// your configs
+	distDir: "build",
 };

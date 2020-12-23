@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Link from "./ActiveLink";
-import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBlog } from "@fortawesome/free-solid-svg-icons";
@@ -9,16 +8,11 @@ import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
 import { faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 import ReactPlayer from "react-player/soundcloud";
 
-const StyledLink = styled(Link)`
-	text-decoration: none;
-	${(props) => props.active && "color: #040055;background-color: #e61d6d;"}
-`;
 function Nav() {
 	let width_v;
 
 	if (typeof window !== "undefined") width_v = window.innerWidth < 1240;
 
-	if (typeof window !== "undefined") width_v = window.innerWidth < 1240;
 	const home = <FontAwesomeIcon icon={faHome} />;
 	const resume = <FontAwesomeIcon icon={faFile} />;
 	const blog = <FontAwesomeIcon icon={faBlog} />;
@@ -44,42 +38,42 @@ function Nav() {
 						<i>{soundcloud}</i>
 					</li>
 				) : null}
-				<StyledLink href="/">
+				<Link className="active place-items-end" href="/">
 					<li className={`${!width_v ? "item movement" : ""}`}>
 						<i>{home}</i>
 						{!width_v ? <span className="home">Home</span> : null}
 					</li>
-				</StyledLink>
-				<StyledLink href="/resume">
+				</Link>
+				<Link href="/resume">
 					<li className={`${!width_v ? "item movement" : ""}`}>
 						<i>{resume}</i>
 						{!width_v ? (
 							<span className="extra-small-resume ">Resume</span>
 						) : null}
 					</li>
-				</StyledLink>
+				</Link>
 				{!width_v ? (
-					<StyledLink exact href="/projects">
+					<Link href="/projects">
 						<li className="text-extra-sm item movement">
 							<i>{project}</i>
 							<span className="extra-small">Projects</span>
 						</li>
-					</StyledLink>
+					</Link>
 				) : null}
-				<StyledLink href="/blog">
+				<Link href="/blog">
 					<li className=" item movement">
 						<i>{blog}</i>
 						{!width_v ? <span className="blog">Blog</span> : null}
 					</li>
-				</StyledLink>
-				<StyledLink href="/contact">
+				</Link>
+				<Link href="/contact">
 					<li className="text-extra-sm item movement">
 						<i>{contact}</i>
 						{!width_v ? (
 							<span className="extra-small-contacts">&nbsp;Contacts</span>
 						) : null}
 					</li>
-				</StyledLink>
+				</Link>
 			</ul>
 		</nav>
 	);
