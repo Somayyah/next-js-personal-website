@@ -1,0 +1,84 @@
+@media (min-width: 1240px) {
+	@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+	.flexbox-container {
+		padding-left: auto;
+		font-family: "Roboto Mono", monospace;
+	}
+
+	.flexbox-item {
+		margin-top: auto;
+	}
+
+	p span {
+		color: #d229e2;
+	}
+
+    .icons-container a{
+        cursor: pointer;
+    }
+	.icons-container {
+        z-index: 10;
+        margin-right: 4rem;
+        top: auto;
+        bottom: auto;
+        right:0;
+        height: 50%;
+        width: 1px;
+        font-size: 2rem;
+        font-family: 'Roboto Mono', monospace;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+        position: absolute;
+        color: #7C54E1;
+        box-shadow: 0 0 2px 0.5px #440bd4;
+    }
+    
+    .github{
+        background-color: #040055;
+        margin-top: -3rem;
+    }
+
+    .icons-container i:hover{
+        color: #d229e2;
+    }
+    
+    .linkedIn{
+        background-color: #040055;
+        margin-top: 3rem;
+    }
+
+	.flexbox-item-2 {
+		text-align: center;
+		width: 80%;
+		border-radius: 5%;
+		margin-left: 1.5rem;
+		margin-top: 3rem;
+		padding-right: 1rem;
+		padding-left: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		font-size: 1.75rem;
+		color: #7C54E1;
+		box-shadow: 15px 15px 0px rgba(210, 41, 226, 0.5);
+	}
+
+	button{
+		outline: none !important;
+		box-shadow: none !important;
+		cursor: pointer;
+		appearance: none;
+		color: #440bd4;
+		font-size: 2rem;
+	}
+
+	.title {
+		display: inline;
+		text-align: center;
+		background-color: #040055;
+		margin-top: 2rem;
+	}
+}
