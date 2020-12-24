@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://alt-f4.netlify.app/sitemap.xml
