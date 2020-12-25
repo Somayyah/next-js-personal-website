@@ -25,7 +25,7 @@ function Contact() {
 			<Head>
 				<meta charSet="utf-8" />
 				<meta
-					name="Contact Information"
+					name="description"
 					content="Find me at linkedin, github and codepen.io."
 				/>
 				<title>Contact information</title>

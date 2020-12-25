@@ -11,7 +11,7 @@ function Blog() {
 			<Head>
 				<meta charSet="utf-8" />
 				<meta
-					name="Blog - alt f4"
+					name="description"
 					content="Read about technologies and topics like cloud computing, DevOps, react front end development. Find tips about Kubernetes, Docker, Puppet, Azure, Firebase and Google cloud platform. Explore tutorials on Python programming, and front end."
 				/>
 				<title>Blog - alt f4</title>
