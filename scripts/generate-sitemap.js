@@ -3,9 +3,12 @@ const fs = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
 
+<<<<<<< HEAD
 const robot = `User-agent: *
 Sitemap: https://alt-f4.netlify.app/sitemap.xml`
 
+=======
+>>>>>>> 9122d147537e46a7eb95386a52d67696805cd7c8
 (async () => {
 	const prettierConfig = await prettier.resolveConfig("./.prettierrc.js");
 
@@ -43,5 +46,8 @@ Sitemap: https://alt-f4.netlify.app/sitemap.xml`
 	});
 
 	fs.writeFileSync("public/sitemap.xml", formatted);
+<<<<<<< HEAD
 	fs.writeFileSync("public/robots.txt", robot);
+=======
+>>>>>>> 9122d147537e46a7eb95386a52d67696805cd7c8
 })();
