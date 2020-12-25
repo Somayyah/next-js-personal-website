@@ -3,6 +3,9 @@ const fs = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
 
+const robot = `User-agent: *
+Sitemap: https://alt-f4.netlify.app/sitemap.xml`
+
 (async () => {
 	const prettierConfig = await prettier.resolveConfig("./.prettierrc.js");
 
@@ -40,4 +43,5 @@ const prettier = require("prettier");
 	});
 
 	fs.writeFileSync("public/sitemap.xml", formatted);
+	fs.writeFileSync("public/robots.txt", robot);
 })();
